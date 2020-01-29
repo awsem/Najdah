@@ -1,0 +1,83 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:d="http://xamarin.com/schemas/2014/forms/design"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             mc:Ignorable="d"
+             x:Class="Najdah.Views.MainView">
+    <ContentPage.Content>
+        <Grid>
+            <Grid.RowDefinitions>
+                <RowDefinition Height="Auto" />
+                <RowDefinition />
+            </Grid.RowDefinitions>
+            <Image Aspect="AspectFit"
+                   Source="najdah_logo"
+                   HeightRequest="100"
+                   Margin="40" />
+            <Grid Grid.Row="1">
+                <Grid.RowDefinitions>
+                    <RowDefinition />
+                    <RowDefinition />
+                </Grid.RowDefinitions>
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition />
+                    <ColumnDefinition />
+                </Grid.ColumnDefinitions>
+                <Frame BackgroundColor="{StaticResource PrimaryColor}"
+                       CornerRadius="10"
+                       Margin="10"
+                       HasShadow="True">
+                    <ImageButton  Source="nurse.png"
+                                  Padding="10"
+                                  IsOpaque="True"
+                                  Clicked="HospitalButtonClicked"
+                                  BackgroundColor="{StaticResource PrimaryColor}" />
+
+                </Frame>
+                <Frame Grid.Column="1"
+                       Grid.Row="0"
+                       BackgroundColor="{StaticResource PrimaryColor}"
+                       CornerRadius="10"
+                       Margin="10"
+                       HasShadow="True">
+                    <ImageButton  Source="policeman.png"
+                                  Padding="10"
+                                  IsOpaque="True"
+                                  Clicked="PoliceButtonClicked"
+                                  BackgroundColor="{StaticResource PrimaryColor}" />
+
+                </Frame>
+
+                <Frame Grid.Column="0"
+                       Grid.Row="1"
+                       BackgroundColor="{StaticResource PrimaryColor}"
+                       CornerRadius="10"
+                       Margin="10"
+                       HasShadow="True">
+                    <ImageButton  Source="firefighter.png"
+                                  Padding="10"
+                                  IsOpaque="True"
+                                  Clicked="FirefighterButtonClicked"
+                                  BackgroundColor="{StaticResource PrimaryColor}" />
+
+                </Frame>
+
+                <Frame Grid.Column="1"
+                       Grid.Row="1"
+                       BackgroundColor="{StaticResource PrimaryColor}"
+                       CornerRadius="10"
+                       Margin="10"
+                       HasShadow="True">
+                    <ImageButton  Source="worker.png"
+                                  Padding="10"
+                                  IsOpaque="True"
+                                  Clicked="WorkerButtonClicked"
+                                  BackgroundColor="{StaticResource PrimaryColor}" />
+
+                </Frame>
+            </Grid>
+
+        </Grid>
+    </ContentPage.Content>
+</ContentPage>

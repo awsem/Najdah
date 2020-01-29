@@ -1,0 +1,56 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:d="http://xamarin.com/schemas/2014/forms/design"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             mc:Ignorable="d"
+             x:Class="Najdah.Views.RegisterView">
+    <ContentPage.Content>
+        <Grid>
+            <Grid.Resources>
+                <ResourceDictionary>
+                    <Style TargetType="Entry">
+                        <Setter Property="TextColor"
+                                Value="{StaticResource PrimaryColor}" />
+                    </Style>
+                </ResourceDictionary>
+            </Grid.Resources>
+            <Grid.RowDefinitions>
+                <RowDefinition />
+                <RowDefinition />
+                <RowDefinition Height="4*" />
+            </Grid.RowDefinitions>
+
+            <Image Grid.Row="1"
+                   Aspect="AspectFit"
+                   Source="najdah_logo.png"
+                   HeightRequest="100"
+                   Margin="20" />
+            <StackLayout Grid.Row="2"
+                         Spacing="10"
+                         Padding="10">
+                <Entry x:Name="nameEntry"
+                       Placeholder="Name"
+                       Keyboard="Text"
+                       Margin="10"
+                       Text="Asem Alabdali" />
+                <Entry x:Name="ageEntry"
+                       Placeholder="Age"
+                       Keyboard="Numeric"
+                       Margin="10"
+                       Text="22" />
+                <Entry x:Name="bloodTypeEntry" 
+                       Placeholder="Blood Type"
+                       Text="O++"
+                       Keyboard="Text"
+                       Margin="10" />
+                <Button Text="Save"
+                        Margin="10"
+                        Clicked="Button_Clicked"
+                        BackgroundColor="{StaticResource PrimaryColor}"
+                        TextColor="White" />
+            </StackLayout>
+
+        </Grid>
+    </ContentPage.Content>
+</ContentPage>

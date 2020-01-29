@@ -1,0 +1,41 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <title>Najdah - Emergency System</title>
+
+   
+    <link href="~/libs/semantic-ui/semantic.css" rel="stylesheet" />
+    <link href="~/css/site.css" rel="stylesheet" />
+</head>
+<body>
+
+    <header>
+        <nav class="ui red top menu ">
+            <div class="container ui">
+                <div class="item">
+                    <img src="~/imgs/najdah_logo_icon.png" alt="logo" />
+                </div>
+                <a id="home" class="item" asp-controller="Home" asp-action="Index">Home</a>
+                <a id="dashboard" class="item" asp-controller="Home" asp-action="Dashboard">Dashboard</a>
+                <div class="right menu">
+                    <div class="item">
+                        <a class="ui red button" asp-controller="Home" asp-action="About">About</a>
+                    </div>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <div>
+        @RenderBody()
+    </div>
+
+
+
+    <script src="~/libs/jquery/jquery.js"></script>
+    <script src="~/libs/microsoft/signalr/dist/browser/signalr.js"></script>
+    <script src="~/libs/semantic-ui/semantic.js"></script>
+    <script src="~/js/site.js"></script>
+
+</body>
+</html>

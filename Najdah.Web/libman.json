@@ -1,0 +1,41 @@
+{
+  "version": "1.0",
+  "defaultProvider": "cdnjs",
+  "libraries": [
+    {
+      "library": "semantic-ui@2.4.1",
+      "destination": "wwwroot/libs/semantic-ui/",
+      "files": [
+        "semantic.min.js",
+        "semantic.js",
+        "semantic.min.css",
+        "semantic.css"
+      ]
+    },
+    {
+      "library": "jquery@3.4.1",
+      "destination": "wwwroot/libs/jquery/"
+    },
+    {
+      "provider": "unpkg",
+      "library": "@microsoft/signalr@3.1.0",
+      "destination": "wwwroot/libs/microsoft/signalr/",
+      "files": [
+        "dist/browser/signalr.js",
+        "dist/browser/signalr.min.js"
+      ]
+    },
+    {
+      "provider": "unpkg",
+      "library": "font-awesome@4.7.0",
+      "destination": "wwwroot/libs/font-awesome/",
+      "files": [
+        "css/font-awesome.css"
+      ]
+    },
+    {
+      "library": "font-awesome@5.11.2",
+      "destination": "wwwroot/libs/font-awesome/"
+    }
+  ]
+}
